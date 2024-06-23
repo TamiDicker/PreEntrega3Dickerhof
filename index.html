@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viaje</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <form id="viajeForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="destino">Destino:</label>
+        <select id="destino" required>
+            <option value="París">París</option>
+            <option value="Londres">Londres</option>
+            <option value="Roma">Roma</option>
+            <option value="Praga">Praga</option>
+            <option value="Tokio">Tokio</option>
+        </select><br>
+
+        <label for="cuotas">Cuotas:</label>
+        <select id="cuotas" required>
+            <option value="6">6</option>
+            <option value="12">12</option>
+            <option value="18">18</option>
+        </select><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+    <div id="historial">
+        <h2>Historial de Resultados</h2>
+        <ul id="listaHistorial"></ul>
+    </div>
+
+    <footer></footer>
+
+    <!-- Aca pongo los Script de JS -->
+    <script src="js/navegacion.js"></script>
+
+    <script src="js/script.js"></script>
+    <!-- Scripts de JS  -->
+
+</body>
+
+</html>
